@@ -20,7 +20,7 @@ public class SwitchActive : MonoBehaviour
     void Update()
     {
         current = Time.time;
-        Debug.Log(Time.time);
+        //Debug.Log(Time.time);
         if (current >= last + maxTime)
         {
             switchy = !switchy;
