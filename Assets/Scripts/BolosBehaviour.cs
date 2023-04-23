@@ -6,11 +6,15 @@ public class BolosBehaviour : MonoBehaviour
 {
     public float secondsToRestartGame = 3.0f;
     public GameObject go;
+    private void Start()
+    {
+        go = GameObject.Find("BowlingLine");
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "ball")
         {
-            //Debug.Log("Bola");
+            Debug.Log("Bola");
             //Destroy();
             go.GetComponent<BolosManager>().instanciaBolos();
         }
