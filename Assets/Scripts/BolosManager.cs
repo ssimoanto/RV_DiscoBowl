@@ -9,6 +9,7 @@ public class BolosManager : MonoBehaviour
     
     public void instanciaBolos()
     {
+        //BolosEmpty
         GameObject prefabInstance = Instantiate(go, this.gameObject.transform) as GameObject;
         prefabInstance.transform.parent = this.gameObject.transform;
     }
