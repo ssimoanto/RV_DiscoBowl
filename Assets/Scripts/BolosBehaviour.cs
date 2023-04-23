@@ -16,7 +16,11 @@ public class BolosBehaviour : MonoBehaviour
         {
             Debug.Log("Bola");
             //Destroy();
-            go.GetComponent<BolosManager>().instanciaBolos();
+           Invoke("instanciaBolosAux", 3.0f);
         }
+    }
+    private void instanciaBolosAux()
+    {
+        go.GetComponent<BolosManager>().instanciaBolos();
     }
 }

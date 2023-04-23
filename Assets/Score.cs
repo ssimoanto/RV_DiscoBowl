@@ -12,6 +12,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<TextMeshPro>().text = Time.time.ToString();
+        GetComponent<TextMeshPro>().text = GameObject.Find("BowlingLine").GetComponent<BolosManager>().points.ToString();
     }
 }
