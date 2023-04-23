@@ -30,6 +30,7 @@ public class BolosManager : MonoBehaviour
     {
         GameObject prefabInstance = Instantiate(go, this.gameObject.transform) as GameObject;
         prefabInstance.transform.parent = this.gameObject.transform;
+        GameObject.Find("myball").transform.position = new Vector3(0f, 2f, 11f);
 
     }
 }
